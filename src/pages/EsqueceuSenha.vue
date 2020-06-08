@@ -1,5 +1,5 @@
 <template>
-    <q-page class="flex flex-center">
+  <q-page class="flex flex-center">
 
       <q-card flat bordered class="my-card bg-grey-1">
         <q-card-section>
@@ -11,26 +11,27 @@
                 alt="Quasar logo"
                 src="~assets/Doctor_Test.png" style="max-width: 300px"
               >
-              <div class="text-h6 flex flex-center">Login</div>
+              <div class="text-h6 flex flex-center">Esqueceu Senha</div>
 
               <div class="q-pa-md">
                 <div class="q-gutter-md" style="max-width: 300px">
 
-                  <q-input filled v-model="Login.email" label="E-mail" />
-                  <q-input filled v-model="Login.senha" label="Senha" type="password" />
+                  <q-input filled v-model="EsqueceuSenha.nome" label="Nome Completo" />
+                  <q-input filled v-model="EsqueceuSenha.email" label="E-mail" />
 
                 </div>
               </div>
 
               <div>
                 <q-btn-group flat>
-                  <q-btn  label="Cadastrar" icon="fas fa-user-plus" to="/Cadastrar" />
-                  <q-btn  label="Entrar" icon="fas fa-sign-in-alt" to="/" />
+                  <q-btn  label="Cancelar" icon="fas fa-backspace" to="/Login" />
+                  <q-btn  label="Enviar" icon="fas fa-envelope" to="/" />
                 </q-btn-group>
               </div>
+              <br/>
 
               <div>
-              <q-btn flat  class="flex flex-center"  label="Esqueci a senha" icon="fas fa-key" to="/EsqueceuSenha" />
+              <label class="flex flex-center">--------------------------------------------------------------------</label>
               </div>
 
               <br/>
@@ -45,22 +46,22 @@
 </q-page>
 </template>
 
-  <style lang="sass" scoped>
+<style lang="sass" scoped>
   .my-card
     width: 100%
     max-width: 300px
-  </style>
+</style>
 
 <script>
-export default{
-name: "Login",
+export default {
     data(){
-      return {
-        Login:{
-          email:'',
-          senha:''
+        return{
+            EsqueceuSenha:{
+                nome:"",
+                email:""
+            }
         }
-      }
     }
 }
 </script>
+

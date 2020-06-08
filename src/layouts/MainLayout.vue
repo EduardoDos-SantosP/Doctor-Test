@@ -15,7 +15,7 @@
           Doctor Test
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Tecnizium</div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +30,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Test Links
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -61,15 +61,19 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
-          link: 'https://quasar.dev'
+          title: 'Login',
+          icon: 'fas fa-sign-in-alt',
+          link:'/#/Login'
         },
         {
-          title: 'Login',
+          title: 'Cadastrar',
+          icon: 'fas fa-user-plus',
+          link: '/#/Cadastrar'
+        },
+        {
+          title: 'Esqueceu Senha',
           icon: 'fas fa-key',
-          link:'/#/Login'
+          link: '/#/EsqueceuSenha'
         }
 
       ]

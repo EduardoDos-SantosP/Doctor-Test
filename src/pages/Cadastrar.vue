@@ -2,17 +2,18 @@
 
   <q-page class="flex flex-center">
 
-    <q-card flat bordered class="my-card bg-grey-1 fixed-center	">
+    <q-card flat bordered class="my-card bg-grey-1">
       <q-card-section>
 
         <div class="row items-center no-wrap">
           <div class="col">
 
             <img
+              class="flex flex-center"
               alt="Quasar logo"
-              src="~assets/Doctor_Test.jpeg" style="max-width: 220px">
+              src="~assets/Doctor_Test.png" style="max-width: 300px">
 
-              <div class="text-h6">Cadastrar</div>
+              <div class="text-h6 flex flex-center">Cadastrar</div>
 
               <div class="q-pa-md">
                 <div class="q-gutter-md" style="max-width: 300px">
@@ -31,6 +32,9 @@
                 </q-btn-group>
               </div>
 
+            <br/>
+              <label class="fas fa-copyright flex flex-center">Tecnizium</label>
+
             </div>
           </div>
 
@@ -43,7 +47,7 @@
   <style lang="sass" scoped>
   .my-card
     width: 100%
-    max-width: 250px
+    max-width: 300px
   </style>
 
 <script>
